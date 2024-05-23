@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <style>
+    /* Reset some default browser styles */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    /* Ensure body takes the full viewport height and set as flex container */
+    body {
+      display: flex;
+      flex-direction: column;
+      background-image: url('./Images/photo.png');
+    }
+
+    /* Ensure main content area grows and takes remaining space */
+    main {
+      flex: 1;
+    }
+
+    /* Normal link */
+    a {
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    /* Visited link */
+    a:visited {
+      color: purple;
+    }
+
+    /* Unvisited link */
+    a:link {
+      color: orange; /* Changed to lowercase */
+    }
+
+    /* Hover effect */
+    a:hover {
+      background-color: white;
+    }
+
+    /* Active link */
+    a:active {
+      background-color: green;
+    }
+
+    /* Style the search form */
+    .search-form {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .form-control {
+      padding: 8px;
+      margin-right: 10px;
+    }
+
+    section {
+      padding: 71px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: darkgray;
+    }
+
+    /* Dropdown button */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-btn {
+      padding: 10px;
+      color: white;
+      background-color: skyblue;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      background-color: #333;
+      padding: 10px;
+    }
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      align-items: center; /* Ensure all items align vertically */
+    }
+
+    li {
+      margin-right: 10px;
+    }
+
+    li img {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <ul>
+    <li><img src="./Images/logo.jpg" width="90" height="60" alt="Logo"></li>
+    <li><a href="./home.html">HOME</a></li>
+    <li><a href="./about.html">ABOUT</a></li>
+    <li><a href="./contact.html">CONTACT</a></li>
+    <!-- Adding TABLES button with dropdown -->
+    <li class="dropdown">
+      <button class="dropdown-btn">TABLES</button>
+      <div class="dropdown-content">
+        <a href="./articles.php">ARTICLES</a>
+        <a href="./article_tags.php">ARTICLE TAGS</a>
+        <a href="./categories.php">CATEGORIES</a>         
+        <a href="./comments.php">COMMENTS</a>
+        <a href="./likes.php">LIKES</a>
+        <a href="./roles.php">ROLES</a>
+        <a href="./tags.php">TAGS</a>
+        <a href="./users.php">USERS</a>
+        <a href="./user_roles.php">USER ROLES</a>
+        <!-- Add more table links as needed -->
+      </div>
+    </li>
+  </ul>
+  <form class="search-form" role="search" action="search.php">
+    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+</header>
+
+<main>
+  <center>
+    <section style="color: navajowhite;">
+      <marquee><h1 style="color: white;">WELCOME TO OUR WEBSITE OF CONTENT MANAGEMENT SYSTEM</h1></marquee>
+      <h2 style="color: green;"><u><p>Some specific purposes and objectives of a Content management system project:</p></h2></u>
+      <ol type="number">
+        <b>Content Organisation:</b><br><br> 
+        <b>Workflow management:</b><br><br>
+        <b>Scalability:</b><br><br>
+        <b>Customisation:</b><br><br>  
+        <b>Integration:</b> <br><br>
+        <b>Perfomance optmisation</b><br><br>
+        <b>Multilingual support</b> <br><br>
+        <b>Content versioning and archiving</b><br><br>
+        <b>Accessibility</b><br><br>
+        <b>User experience enhancement</b><br><br>
+      </ol>
+    </section>
+  </center>
+</main>
+
+<footer>
+  <center> 
+    <b><h2>Designed by: @Angela BUTOYI INGABIRE</h2></b>
+  </center>
+</footer>
+
+</body>
+</html>
